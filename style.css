@@ -287,13 +287,13 @@ footer h1 {
 .grid-container .item-two {
     display: block;
     background-color: white;
-    padding: 12px;
+    padding: 0px;
     border: none;
 }
 .grid-container .item-one {
     display: block;
     background-color: white;
-    padding: 12px;
+    padding: 0px;
     border: none;
 }
 .item-one ol li p {
@@ -357,7 +357,7 @@ footer h1 {
     height: auto;
     padding-left: 300px;
 }
-div ,iframe , p  {
+div ,iframe {
     width: 100%;
     height: auto;
     text-align: center;
@@ -441,8 +441,8 @@ div ,iframe , p  {
         border: 3px solid white;
     }
     .btn-back:hover , .btn-next:hover{
-            font-family: 'Oswald', sans-serif;
-            background-color: #d1dfe4;
+        font-family: 'Oswald', sans-serif;
+        background-color: #d1dfe4;
     }
     .btn-next {
         position: absolute;
@@ -471,7 +471,7 @@ div ,iframe , p  {
     nav ul {
         display: flex;
         top: 0;
-        right: 0;
+        right: -50px;
         position: absolute;
         background-color: rgba(0,0,0,0.5);
         flex-direction: column;
@@ -510,7 +510,7 @@ div ,iframe , p  {
         grid-template-columns: auto;
         gap: 10px;
         background-color: white;
-        padding: 10px;
+        padding: 0px;
     }
     .img-tool {
        min-height: 200px;
@@ -547,7 +547,7 @@ div ,iframe , p  {
         position: absolute;
         width: 70px;
         height: 41px;
-        top: 1262%;
+        top: 1256%;
         bottom: 0px;
         font-family: 'Oswald', sans-serif;
         background-color: #22a4cf;
@@ -555,14 +555,14 @@ div ,iframe , p  {
         border-radius: 5px;
     }
     .btn-back:hover , .btn-next:hover{
-            font-family: 'Oswald', sans-serif;
-            background-color: #d1dfe4;
+        font-family: 'Oswald', sans-serif;
+        background-color: #d1dfe4;
     }
     .btn-next {
         position: absolute;
         width: 70px;
         height: 41px;
-        top: 1262%;
+        top: 1256%;
         font-family: 'Oswald', sans-serif;
         background-color: #22a4cf;
         color: white;
@@ -578,7 +578,6 @@ div ,iframe , p  {
     }
 }
 @media screen and (max-width: 600px) {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,700&display=swap');
     body {
         font-family: 'Roboto', sans-serif;
     }
@@ -586,8 +585,10 @@ div ,iframe , p  {
         display: grid;
         grid-template-columns: auto;
         gap: 10px;
+        width: 100%;
+        height: auto;
         background-color: white;
-        padding: 10px;
+        padding: 0px;
     }
     .img-tool {
        min-height: 200px;
