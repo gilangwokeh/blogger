@@ -401,6 +401,7 @@ div ,iframe {
         font-family: 'Roboto', sans-serif;
         margin: 0px;
         padding: 10px;
+        overflow-x: hidden;
     }
     .header-three{
         position: absolute;
@@ -493,6 +494,8 @@ div ,iframe {
     }
     body{
         font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
+
     }
     .img-tool{
         padding: 10px;
@@ -580,6 +583,7 @@ div ,iframe {
 @media screen and (max-width: 600px) {
     body {
         font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
     }
     .grid-container {
         display: grid;
