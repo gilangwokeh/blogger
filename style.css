@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Oswald:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.5);
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    display: flex;
+}
+nav ul li a {
+    text-decoration: none;
+    display: flex;
+    margin-right: 10px;
+    color: white;
+}
+nav ul li a:hover {
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #c85250;
+    width: 100%;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+li .dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+.dropdown-content a:hover {
+    background-color: black;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.icon{
+    padding-left: 20px;
+
+}
+.menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 45px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+.glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 5px 5px 5px rgba(42, 55, 68, 0.1);
+}
+.menu input {
+    position: absolute;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+.menu span {
+    background-color: black;
+    display: block;
+    width: 45px;
+    height: 10px;
+    transition: all 0.75s;
+    -webkit-transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -ms-transition: all 0.75s;
+    -o-transition: all 0.75s;
+}
+.menu input {
+    position: absolute;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+.menu span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu span:nth-child(4) {
+    transform-origin: 0 0;
+}
+.menu input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(16px, -2px);
+    -webkit-transform: rotate(45deg) translate(16px, -2px);
+    -moz-transform: rotate(45deg) translate(16px, -2px);
+    -ms-transform: rotate(45deg) translate(16px, -2px);
+    -o-transform: rotate(45deg) translate(16px, -2px);
+}
+.menu input:checked ~ span:last-child {
+    transform: rotate(-45deg) translate(1px, 7px);
+    -webkit-transform: rotate(-45deg) translate(1px, 7px);
+    -moz-transform: rotate(-45deg) translate(1px, 7px);
+    -ms-transform: rotate(-45deg) translate(1px, 7px);
+    -o-transform: rotate(-45deg) translate(1px, 7px);
+}
+
+.menu input:checked ~ span:nth-child(3) {
+    opacity: 0;
+}
+.header-title{
+    text-align: center;
+    font-size: 25px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: white;
+    padding: 0px;
+}
+.grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.item1 {
+    font-size: 30px;
+    grid-row: 1 /10;
+}
+.img-tool{
+    padding: 20px;
+    background-color: white;
+}
+footer {
+    background-color: black;
+    position: relative;
+    top: 30px;
+}
+footer h1 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+.btn-back {
+    position: absolute;
+    left: 30%;
+    width: 70px;
+    height: 41px;
+    position: absolute;
+    right: 30%;
+    top: 195%;
+    font-family: 'Oswald', sans-serif;
+    background-color: #22a4cf;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+.btn-back:hover , .btn-next:hover{
+        font-family: 'Oswald', sans-serif;
+        background-color: #d1dfe4;
+}
+.btn-next {
+    position: absolute;
+    right: 30%;
+    width: 70px;
+    height: 41px;
+    top: 195%;
+    font-family: 'Oswald', sans-serif;
+    background-color: #22a4cf;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+.item1 ul li {
+    list-style: none;
+    
+}
+.item1 ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    color: black;
+}
+.img-about {
+    width: 100%;
+    height: 100%;
+}
+.header-jogging {
+   display: block;
+   
+}
+.grid-container-menu {
+    display: grid;
+    column-gap: 10px;
+    background-color: #2196f3;
+    grid-template-columns: auto auto;
+}
+.about {
+    display: flex;
+    margin-top: 70px;
+    max-width: 100%;
+    height: 400px;
+    font-size: 30px;
+    background-position: center;
+    background-image: url();
+    justify-content: center;
+    background-color: #f1f1f1;
+    background-size: cover;
+    background-image: url(./asset/about-me.png);
+}
+.contact {
+    text-align: center;
+    color: white;
+}
+.contact-menu {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    align-items: center;
+
+}
+.item-two ol li a{
+    color: black;
+    text-decoration: none;
+
+}
+.item-one p{
+    background-color: white;
+    text-align: justify;
+    padding: 5px;
+    font-size: 20px;
+}
+.item-one ol li{
+    background-color: white;
+    text-align: justify;
+    padding: 0px;
+    font-size: 20px;
+}
+.item-two h2 {
+    background-color: white;
+    padding: 10px;
+}
+.grid-container .item-two {
+    display: block;
+    background-color: white;
+    padding: 12px;
+    border: none;
+}
+.grid-container .item-one {
+    display: block;
+    background-color: white;
+    padding: 12px;
+    border: none;
+}
+.item-one ol li p {
+    text-align: justify;
+}
+.header-three{
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    top: 50%;
+    font-size: 60px;
+    right: 23%;
+}
+.header-title-article {
+    font-family: 'Fascinate Inline', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+.header-about {
+    font-family: 'Fascinate Inline', cursive;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+.button-toko {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    font-family: 'Oswald', sans-serif;
+    background-color: #22a4cf;
+    color: white;
+    border-radius: 5px;
+    width: 300px;
+    height: auto;
+    padding: 20px 20px;
+    font-size: 25px;
+    border: 3px solid white;
+}
+
+.button-toko a {
+    text-decoration: none;
+}
+.button-toko:hover {
+    font-family: 'Oswald', sans-serif;
+    background-color: #d1dfe4;
+}
+.header-title-home {
+    font-family: 'Fascinate Inline', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+.div-about {
+    background-color: white;
+    background-size: cover;
+    text-align: justify;
+}
+.paragraph-about {
+    display: flex;
+}
+.item-about p {
+    width: 500px;
+    text-align: justify;
+    height: auto;
+    padding-left: 300px;
+}
+div ,iframe , p  {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+.text-title {
+    font-family: 'Fascinate Inline', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+.input-list-contact {
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+}
+.text-area {
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+}
+.send-button {
+    width: 308px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #22a4cf;
+}
+.input-list-contact , .text-area , .send-button {
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.send-button:hover {
+    font-family: 'Oswald', sans-serif;
+    background-color: #d1dfe4;
+    cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,700&display=swap');
+    .menu {
+        display: none;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0px;
+        padding: 10px;
+    }
+    .header-three{
+        position: absolute;
+        font-family: 'Oswald', sans-serif;
+        top: 50%;
+        font-size: 40px;
+        right: 23%;
+    }
+    .button-toko  {
+        text-decoration: none;
+    }
+    .button-toko {
+        position: absolute;
+        bottom: 5%;
+        left: 30%;
+        font-family: 'Oswald', sans-serif;
+        background-color: #22a4cf;
+        color: white;
+        border-radius: 5px;
+        width: 300px;
+        height: auto;
+        padding: 20px 20px;
+        font-size: 25px;
+        border: 3px solid white;
+    }
+    .btn-back {
+        position: absolute;
+        left: 30%;
+        width: 70px;
+        height: 41px;
+        position: absolute;
+        right: 30%;
+        top: 230%;
+        font-family: 'Oswald', sans-serif;
+        background-color: #22a4cf;
+        color: white;
+        border-radius: 5px;
+        border: 3px solid white;
+    }
+    .btn-back:hover , .btn-next:hover{
+            font-family: 'Oswald', sans-serif;
+            background-color: #d1dfe4;
+    }
+    .btn-next {
+        position: absolute;
+        right: 30%;
+        width: 70px;
+        height: 41px;
+        top: 230%;
+        font-family: 'Oswald', sans-serif;
+        background-color: #22a4cf;
+        color: white;
+        border-radius: 5px;
+        border: 3px solid white;
+    }
+    .item-about p {
+        width: 500px;
+        text-align: justify;
+        height: auto;
+        padding-left: 140px;
+    }
+}
+@media screen and (max-width: 768px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,700&display=swap');
+    .menu {
+        display:flex;
+    }
+    nav ul {
+        display: flex;
+        top: 0;
+        right: 0;
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        flex-direction: column;
+        width: 60%;
+        height: 100vh;
+        padding: 10px 20px;
+        transform: translate(100%);
+        -webkit-transform: translate(100%);
+        -moz-transform: translate(100%);
+        -ms-transform: translate(100%);
+        -o-transform: translate(100%);
+    }
+    .slide {
+        transform: translate(0%);
+        -webkit-transform: translate(0%);
+        -moz-transform: translate(0%);
+        -ms-transform: translate(0%);
+        -o-transform: translate(0%);
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .img-tool{
+        padding: 10px;
+    }
+    .mahasiswa {
+        display: flex;
+        position: relative;
+        left: 31%;
+    }
+    .item1 {
+        display: none;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        background-color: white;
+        padding: 10px;
+    }
+    .img-tool {
+       min-height: 200px;
+       min-width: 400px;
+    }
+    .input-list-goods{
+        display: flex;
+        left: 15%;
+        position: relative;
+        width: 300px;
+    } 
+    .header-three{
+        position: absolute;
+        font-family: 'Oswald', sans-serif;
+        top: 32%;
+        font-size: 25px;
+        right: 19%;
+    }
+    .button-toko {
+        position: absolute;
+        bottom: 30%;
+        left: 22%;
+        font-family: 'Oswald', sans-serif;
+        background-color: #22a4cf;
+        color: white;
+        border-radius: 5px;
+        width: 300px;
+        height: auto;
+        padding: 5px 5px;
+        font-size: 25px;
+        border: 3px solid white;
+    }
+    .btn-back {
+        position: absolute;
+        width: 70px;
+        height: 41px;
+        top: 1262%;
+        bottom: 0px;
+        font-family: 'Oswald', sans-serif;
+        background-color: #22a4cf;
+        color: white;
+        border-radius: 5px;
+    }
+    .btn-back:hover , .btn-next:hover{
+            font-family: 'Oswald', sans-serif;
+            background-color: #d1dfe4;
+    }
+    .btn-next {
+        position: absolute;
+        width: 70px;
+        height: 41px;
+        top: 1262%;
+        font-family: 'Oswald', sans-serif;
+        background-color: #22a4cf;
+        color: white;
+        border-radius: 5px;
+    }
+    .item-about p {
+        text-align: justify;
+        padding: 1px;
+    }
+    .input-list-contact , .text-area , .send-button {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,700&display=swap');
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        background-color: white;
+        padding: 10px;
+    }
+    .img-tool {
+       min-height: 200px;
+       min-width: 300px;
+    }
+    .item-about p {
+        text-align: justify;
+        padding: 1px;
+        width: 400px;
+    }
+}
